@@ -14,13 +14,15 @@ public class AutoServicio {
      * @return
      */
     public String ingresarAuto(String placa){
+        cola.enqueue(placa);
         //Ingresar codigo aqui
         return null;
     }
 
     public String proximoAuto(){
         //ingresar codigo aqui
-        return null;
+
+        return cola.peek();
     }
 
     /**
@@ -29,11 +31,14 @@ public class AutoServicio {
      */
     public String entregarAuto(){
         //ingresar codigo aqui
-        return null;
+
+
+        return cola.deque();
     }
 
     public int obtenerAutosEnCola(){
         //ingresar codigo aqui
-        return 0;
+
+        return cola.size();
     }
 }

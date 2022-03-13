@@ -4,7 +4,8 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class AutoServicioTest {
-    Cola cola;
+
+    Cola cola = new ColaImpl();
     AutoServicio autoServicio;
 
     @Before

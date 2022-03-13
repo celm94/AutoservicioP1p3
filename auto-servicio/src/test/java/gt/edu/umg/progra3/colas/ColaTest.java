@@ -9,9 +9,9 @@ public class ColaTest {
 
     @Before
     public void init(){
-        //Reemplazar por la implementacion desarrollada
-        //luego, quitar comentario
-        //cola = new ColaImpl();
+        cola = new ColaImpl();
+
+
 
         cola.enqueue("Bienvenidos");
         cola.enqueue("a");
